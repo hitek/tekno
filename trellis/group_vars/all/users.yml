@@ -9,6 +9,7 @@ users:
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       - "{{ lookup('file', '~/.ssh/digital_rsa.pub') }}"
+      - "{{ lookup('file', '/.ssh/mseven.pub') }}"
       - https://github.com/hitek.keys
   - name: "{{ admin_user }}"
     groups:
@@ -16,6 +17,7 @@ users:
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       - "{{ lookup('file', '~/.ssh/digital_rsa.pub') }}"
+      - "{{ lookup('file', '/.ssh/mseven.pub') }}"
       - https://github.com/hitek.keys
 
 web_user: web
