@@ -8,18 +8,15 @@ users:
       - "{{ web_group }}"
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-      - "{{ lookup('file', '~/.ssh/digital_rsa.pub') }}"
-      - "{{ lookup('file', '/.ssh/mseven.pub') }}"
       - https://github.com/hitek.keys
+      - https://github.com/emelgar-tek.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-      - "{{ lookup('file', '~/.ssh/digital_rsa.pub') }}"
-      - "{{ lookup('file', '/.ssh/mseven.pub') }}"
       - https://github.com/hitek.keys
-
+      - https://github.com/emelgar-tek.keys
 web_user: web
 web_group: www-data
 web_sudoers:
