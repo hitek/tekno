@@ -48,7 +48,8 @@
     "wpackagist-plugin/updraftplus":"1.16.15",
     "wpackagist-plugin/duplicate-page":"4.0",
     "wpackagist-plugin/custom-post-type-ui":"1.6.2",
-    "wpackagist-plugin/wp-importer":"1.4"
+    "wpackagist-plugin/wp-importer":"1.4",
+    "wpackagist-plugin/fastly":"1.2.11"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
